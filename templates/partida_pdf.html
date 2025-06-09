@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            padding: 50px;
+            font-size: 14pt;
+            line-height: 1.6;
+        }
+        .titulo {
+            text-align: center;
+            font-size: 18pt;
+            margin-bottom: 20px;
+        }
+        .oficial {
+            margin-top: 30px;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        Alcaldía Municipal de Cojutepeque<br>
+        Partida de Nacimiento Original
+    </div>
+
+    <p><strong>Nombre del inscrito:</strong> {{ partida.nombre }}</p>
+    <p><strong>Fecha de nacimiento:</strong> {{ partida.fecha_nacimiento }}</p>
+    <p><strong>Lugar de nacimiento:</strong> {{ partida.lugar_nacimiento }}</p>
+    <p><strong>Padre:</strong> {{ partida.nombre_padre }}</p>
+    <p><strong>Madre:</strong> {{ partida.nombre_madre }}</p>
+
+    <div class="oficial">
+        <p>Folio: {{ folio }}</p>
+        <p>Fecha de emisión: {{ fecha_emision }}</p>
+        <p>Firma del Registrador Municipal: _________________________</p>
+    </div>
+</body>
+</html>
