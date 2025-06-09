@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pago por Banco</title>
+</head>
+<body>
+    <h2>Instrucciones para pago en banco</h2>
+    <p><strong>Banco:</strong> {{ datos.banco }}</p>
+    <p><strong>Número de cuenta:</strong> {{ datos.numero_cuenta }}</p>
+    <p><strong>Titular de la cuenta:</strong> {{ datos.titular_cuenta }}</p>
+    <p><strong>Monto a pagar:</strong> {{ datos.monto }}</p>
+    <p><strong>Código de referencia:</strong> <span style="color: blue; font-weight: bold;">{{ datos.codigo_referencia }}</span></p>
+    <p>{{ datos.instrucciones }}</p>
+
+    <p><a href="{{ url_for('descargar_pdf') }}">Descargar PDF de partida de nacimiento</a></p>
+    <p><a href="{{ url_for('solicitar') }}">Volver al formulario</a></p>
+</body>
+</html>
